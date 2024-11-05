@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="default.css" id="theme-style" />
+    <script src="sceditor.js"></script>
+    <script src="xhtml.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    
+    <!-- Example text area -->
+    <textarea style="height:700px; width:900px;" name="" id="example">
+        <strong>It works!</strong>
+        <code>bash sudo apt install test package</code>
+    </textarea>
+
+    <!-- Script to init sceditor -->
+    <script>
+    var textarea = document.getElementById('example');
+    sceditor.create(textarea, {
+        format: 'xhtml',
+        style: 'default.css'
+    });
+    </script>
+
+</body>
+</html>
